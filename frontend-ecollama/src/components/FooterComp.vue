@@ -17,6 +17,7 @@
 export default {
   name: "FooterComp",
 };
+//COMENTARIO PRUEBA GIT
 </script>
 
 <style  scoped>
