@@ -36,6 +36,7 @@ namespace BackEnd_Ecollama.Controllers
         [HttpPost]
         public async Task<Venta> Post([FromBody] Venta venta)
         {
+            // comentario en venta controller
             _dBContextEcollama.Venta.Add(venta);
             await _dBContextEcollama.SaveChangesAsync();
 
