@@ -3555,11 +3555,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Diego\\source\\repos\\BackEnd-Ecollama\\BackEnd-Ecollama\\BackEnd-Ecollama.csproj",
+      "projectUniqueName": "C:\\Users\\Diego\\Desktop\\FirstRepository\\BackEnd-Ecollama\\BackEnd-Ecollama\\BackEnd-Ecollama.csproj",
       "projectName": "BackEnd-Ecollama",
-      "projectPath": "C:\\Users\\Diego\\source\\repos\\BackEnd-Ecollama\\BackEnd-Ecollama\\BackEnd-Ecollama.csproj",
+      "projectPath": "C:\\Users\\Diego\\Desktop\\FirstRepository\\BackEnd-Ecollama\\BackEnd-Ecollama\\BackEnd-Ecollama.csproj",
       "packagesPath": "C:\\Users\\Diego\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Diego\\source\\repos\\BackEnd-Ecollama\\BackEnd-Ecollama\\obj\\",
+      "outputPath": "C:\\Users\\Diego\\Desktop\\FirstRepository\\BackEnd-Ecollama\\BackEnd-Ecollama\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",

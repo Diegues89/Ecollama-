@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3asAkXRO8UopnS+DKCtGRQ07mga8X9AYILYV6KtwGp5D/bZy4YCfWbUxnUXD7m8lUq+Wr4mdWcETt9p0s8kXZg==",
+  "dgSpecHash": "XMYyTmoUxlMOg7vfSDXicTrWufiFaeHTrbSzIaFXZPcvB4N0Vxb9VcZzAxbcb2sjQUgKy43iKfXPD2N+kcNbQA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Diego\\source\\repos\\BackEnd-Ecollama\\BackEnd-Ecollama\\BackEnd-Ecollama.csproj",
+  "projectFilePath": "C:\\Users\\Diego\\Desktop\\FirstRepository\\BackEnd-Ecollama\\BackEnd-Ecollama\\BackEnd-Ecollama.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Diego\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Diego\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
