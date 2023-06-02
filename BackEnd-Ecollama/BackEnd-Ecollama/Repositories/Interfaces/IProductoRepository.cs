@@ -2,7 +2,7 @@
 
 namespace BackEnd_Ecollama.Repositories.Interfaces
 {
-    public interface IProducto
+    public interface IProductoRepository
     {
         Task<IEnumerable<Productos>> GetAll();
     }

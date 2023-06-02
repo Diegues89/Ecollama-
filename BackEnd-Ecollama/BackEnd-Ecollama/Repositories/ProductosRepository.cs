@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace BackEnd_Ecollama.Repositories
 {
-    public class ProductosRepository: IProducto
+    public class ProductosRepository: IProductoRepository
     {
         private readonly DBContextEcollama _dBContextEcollama;
 

@@ -1,4 +1,6 @@
 using BackEnd_Ecollama.DataBase;
+using BackEnd_Ecollama.Repositories;
+using BackEnd_Ecollama.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
 var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
@@ -14,6 +16,7 @@ builder.Configuration
 
 builder.Services.AddDbContext<DBContextEcollama>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("ConnectionStringsEcollama")));
 
+builder.Services.AddTransient<IProductoRepository, ProductosRepository>();
 builder.Services.AddCors(options =>
 {
     options.AddPolicy(name: MyAllowSpecificOrigins,
