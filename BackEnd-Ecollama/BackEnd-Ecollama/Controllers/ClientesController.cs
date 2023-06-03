@@ -2,6 +2,7 @@
 using BackEnd_Ecollama.DataBase;
 using BackEnd_Ecollama.Models.DTOs;
 using BackEnd_Ecollama.Repositories;
+using BackEnd_Ecollama.Repositories.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -14,18 +15,20 @@ namespace BackEnd_Ecollama.Controllers
     {
         private readonly DBContextEcollama _dBContextEcollama;
         private readonly IMapper _mapper;
+        private readonly IClientesRepository _clientesRepository;
 
-        public ClientesController(DBContextEcollama dBContextEcollama, IMapper mapper)
+        public ClientesController(DBContextEcollama dBContextEcollama, IMapper mapper, IClientesRepository clientesRepository)
         {
             _dBContextEcollama = dBContextEcollama;
             _mapper = mapper;
+            _clientesRepository = clientesRepository;
         }
         // GET: api/<ClientesController>
         [HttpGet]
         public async Task<IEnumerable<ClientesDTO>> Get()
         {
-            var repository = new ClientesRepository(_dBContextEcollama);
-            var data = await repository.GetAll();
+            
+            var data = await _clientesRepository.GetAll();
 
             return _mapper.Map<List<ClientesDTO>>(data);//Aquí se hace el mapeo
             //return data.ToList();

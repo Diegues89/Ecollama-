@@ -111,6 +111,7 @@ export default {
         //this.salir(idselec)
         this.selecccion = selec
         //this.$emit('idselected', idselec)
+        //prueba comentario git
         }
       }, 
     mounted(){

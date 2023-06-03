@@ -17,6 +17,7 @@ builder.Configuration
 builder.Services.AddDbContext<DBContextEcollama>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("ConnectionStringsEcollama")));
 
 builder.Services.AddTransient<IProductoRepository, ProductosRepository>();
+builder.Services.AddTransient<IClientesRepository, ClientesRepository>();
 builder.Services.AddCors(options =>
 {
     options.AddPolicy(name: MyAllowSpecificOrigins,
