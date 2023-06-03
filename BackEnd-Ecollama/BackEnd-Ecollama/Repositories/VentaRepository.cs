@@ -7,14 +7,16 @@ namespace BackEnd_Ecollama.Repositories
     public class VentaRepository: IVentaRepository
     {
         private readonly DBContextEcollama _dBContextEcollama;
+  
 
         public VentaRepository(DBContextEcollama dBContextEcollama)
         {
-            _dBContextEcollama = dBContextEcollama;
+            
         }
 
         public async Task<Venta> Create(Venta venta)
         {
+
             _dBContextEcollama.Venta.Add(venta);
             await _dBContextEcollama.SaveChangesAsync();
 

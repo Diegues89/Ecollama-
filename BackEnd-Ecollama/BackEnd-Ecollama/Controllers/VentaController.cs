@@ -2,6 +2,7 @@
 using BackEnd_Ecollama.Models;
 using BackEnd_Ecollama.Models.DTOs;
 using BackEnd_Ecollama.Repositories;
+using BackEnd_Ecollama.Repositories.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -13,10 +14,12 @@ namespace BackEnd_Ecollama.Controllers
     public class VentaController : ControllerBase
     {
         private readonly DBContextEcollama _dBContextEcollama;
+        private readonly IVentaRepository _ventaRepository;
 
-        public VentaController(DBContextEcollama dBContextEcollama)
+        public VentaController(DBContextEcollama dBContextEcollama, IVentaRepository ventaRepository)
         {
             _dBContextEcollama = dBContextEcollama;
+            _ventaRepository = ventaRepository;
         }
         // GET: api/<VentaController>
         [HttpGet]
@@ -36,9 +39,8 @@ namespace BackEnd_Ecollama.Controllers
         [HttpPost]
         public async Task<Venta> Post([FromBody] Venta venta)
         {
-            // comentario en venta controller
-            _dBContextEcollama.Venta.Add(venta);
-            await _dBContextEcollama.SaveChangesAsync();
+            
+            await _ventaRepository.Create(venta);
 
             return venta;
         }
