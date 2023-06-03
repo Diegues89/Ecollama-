@@ -13,13 +13,13 @@ namespace BackEnd_Ecollama.Controllers
     [ApiController]
     public class ClientesController : ControllerBase
     {
-        private readonly DBContextEcollama _dBContextEcollama;
+       // private readonly DBContextEcollama _dBContextEcollama;
         private readonly IMapper _mapper;
         private readonly IClientesRepository _clientesRepository;
 
-        public ClientesController(DBContextEcollama dBContextEcollama, IMapper mapper, IClientesRepository clientesRepository)
+        public ClientesController( IMapper mapper, IClientesRepository clientesRepository)
         {
-            _dBContextEcollama = dBContextEcollama;
+            //_dBContextEcollama = dBContextEcollama;
             _mapper = mapper;
             _clientesRepository = clientesRepository;
         }
